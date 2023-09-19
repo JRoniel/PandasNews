@@ -1,0 +1,49 @@
+header {
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+  width: 60%;
+}
+
+header>h1, header>p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#form>.submit {
+  margin-top: 10px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+/* Estilize a classe .article */
+.article {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 20px); /* Ocupa toda a largura da viewport com 10px de espaço nas laterais */
+  box-sizing: border-box; /* Inclui borda e margem na largura */
+  padding: 10px; /* Adicione um preenchimento interno para o conteúdo */
+}
+
+/* Estilize o título dentro dos artigos */
+.article h2 {
+  font-size: 18px;
+  margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+/* Estilize a descrição dentro dos artigos */
+.article p {
+  font-size: 14px;
+  margin: 0; /* Remova a margem superior e inferior da descrição */
+}
+
+/* Use media query para ajustar o layout em dispositivos menores */
+@media screen and (max-width: 768px) {
+  .article {
+    width: calc(100% - 20px); /* Ocupa toda a largura da viewport com 10px de espaço nas laterais */
+    margin-bottom: 10px; /* Adicione uma margem inferior menor em dispositivos menores */
+  }
+}
