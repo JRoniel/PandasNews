@@ -2,14 +2,23 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicione esta linha -->
+    <link rel="stylesheet" href="./styles/style.css"/>
     <title>Panda News</title>
 </head>
 <body>
-    <div class="news" style="display: none;">
+  <header>
+  						<h1>PandaNews</h1>
+  					<p>Pesquise por algum assunto</p>
+    <form method="POST" id="form" action="">
+        <input type="text" autocomplete="off">
+        <button class="submit" type="submit">»</button>
+    </form>  
+    </header>
+    <div class="news">
         <div class="article" id="article1">
             <h2>Title 1</h2>
-            <p>Text 1</p>
+            <p>Lorem ipsum John texto, texto exemplo para calcular espacamento.</p>
         </div>
         <div class="article" id="article2">
             <h2>Title 2</h2>
